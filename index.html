@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculatrice Javascript</title>
+        <meta charset="utf-8" />
+        <link href="css/bootstrap.min.css" rel="stylesheet" />
+        <link href="css/style.css" rel="stylesheet" />
+        <link rel="icon" href="images/icon.jpg" />
+    </head>
+    
+    <body>
+        <h1 align="center">Calculatrice scientifique</h1>
+        <div class="card style=max-width: 18rem p-3  bg-secondary mb-3 text-white">
+        <div class="card-header">
+        <form class="form" name="form">
+            <input type="text" class="resultat" name="resultat" />
+        </form>
+        </div>
+        <div class="card-body">
+            <table>
+                <tr>  
+                    <td><input type="button" name="btnX^2" value="x^2" class="btn btn-dark" onclick="Carré()"/></td>
+                    <td><input type="button" name="btnsquare" value="√"  class="btn btn-dark" onclick="Square()" /></td>
+                    <td><input type="button" name="btnsin" value="sin"  class="btn btn-dark" onclick="Sin()" /></td>
+                    <td><input type="button" name="btncos" value="cos"  class="btn btn-dark" onclick="Cos()" /></td>
+                    <td><input type="button" name="btntan" value="tan"  class="btn btn-dark" onclick="Tan()" /></td>
+                </tr>
+                <tr>
+                    <td><input type="button" name="btn7" value="7" class="btn btn-dark" onclick="myclick('7')"/></td>
+                    <td><input type="button" name="btn8" value="8" class="btn btn-dark" onclick="myclick('8')"/></td>
+                    <td> <input type="button" name="btn9" value="9"class="btn btn-dark" onclick="myclick('9')"/></td>
+                    <td><input type="button" name="multi" value="*" class="btn btn-dark" onclick="myclick('*')"/></td>
+                    <td><input type="button" name="btnlog" value="log" class="btn btn-dark"  onclick="Log()"/> </td>
+                </tr>
+                <tr>
+                    <td><input type="button" name="btn4" value="4"  class="btn btn-dark" onclick="myclick('4')"/></td>
+                    <td> <input type="button" name="btn5" value="5"  class="btn btn-dark" onclick="myclick('5')"/></td>
+                    <td> <input type="button" name="btn6" value="6"  class="btn btn-dark" onclick="myclick('6')"/></td>
+                    <td><input type="button" name="plus" value="+"  class="btn btn-dark" onclick="myclick('+')"/></td>
+                    <td><input type="button" name="btnfact" value="n!"  class="btn btn-dark" onclick="Factoriel()"/></td>
+                </tr>
+                <tr>
+                    <td><input type="button" name="btn1" value="1"  class="btn btn-dark" onclick="myclick('1')"/></td>
+                    <td><input type="button" name="btn2" value="2"  class="btn btn-dark" onclick="myclick('2')"/></td>
+                    <td><input type="button" name="btn3" value="3"  class="btn btn-dark" onclick="myclick('3')"/></td>
+                    <td><input type="button" name="soustraction"  class="btn btn-dark" value="-" onclick="myclick('-')"/></td>
+                    <td><input type="button" name="btnexpo" value="exp"  class="btn btn-dark" onclick="Expo()"/></td>
+                </tr>
+                
+                <tr>
+                    <td><input type="button" name="btn0" value="0"  class="btn btn-dark" onclick="myclick('0')"/></td>
+                    <td><input type="button" name="virgule" value="." class="btn btn-dark"  onclick="myclick('.')"/></td>
+                    <td><input type="button" name="btnPi" value="π"  class="btn btn-dark" onclick="Pi()"/></td>
+                    <td><input type="button" name="egal" value="="  class="btn btn-dark" onclick="equal()"/></td>
+                    <td> <input type="button" name="div" value="/"  class="btn btn-dark" onclick="myclick('/')"/></td>
+                </tr>
+                <tr>
+                    <td><input type="button" name="del" value="DEL" class="btn btn-danger" onclick="Backspace()"/></td>
+                    <td><input type="button" name="back" value="AC"  class="btn btn-danger" onclick="AC()"/></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+            </table>
+        </div>
+    </div>
+    <script type= "text/javascript" src="fonction.js"> </script>
+
+    </body>
+</html>
